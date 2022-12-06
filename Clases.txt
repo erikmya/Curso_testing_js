@@ -36,5 +36,27 @@ e2e tests: mismo tamaño que unit tests y menos que static e integration
 
 ------------------------------------------------------------------------------------------------------------------------
 
+Clase 3 Deuda técnica
+
+Igual que en las finanzas, las deudas no son buenas ni malas, solo son una estrategia para alcanzar algo y luego se paga.
+
+haciendo pruebas se maneja el
+riesgo
+
+Diseño
+Desarrollo
+Pruebas
+Producción
+El momento y pruebas dependen de la fase en la que se encuentra la compañía:
+
+Tracción
+Inflexión
+Escala
+Expansión
+La deuda de deficiencia del desarrollador puede ser alta porque en la fase de tracción, la compañía busca velocidad > precisión , de modo que en esta etapa el testing no se valora, ya que buscan lanzar, lanzar, lanzar…
+
+Cuando se entra a la fase de inflexión, hay más usuarios y se empiezan a escribir más pruebas, curando la deuda.
+
+------------------------------------------------------------------------------------------------------------------------
 
 
