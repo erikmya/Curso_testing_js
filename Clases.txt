@@ -19,5 +19,22 @@ QA: Equipos de creacion de pruebas automaticas o manuales.
 
 ------------------------------------------------------------------------------------------------------------------------
 
+Clase 2 
+
+La pirámide clásica del testing: (de menos a más costoso y tendría que haber más pruebas de las primeras que de las últimas)
+
+unit tests
+integration tests
+end to end tests (e2e)
+ui test: emulan el dispositivo físico
+En javascript se recomienda en vez la pirámide el trofeo de tests:
+
+static tests: el tronco (el segundo mayor número de pruebas)
+unit tests: mismo num. de pruebas que e2e y menos que static e integration
+integration tests: el mayor número de pruebas debe ser aquí
+e2e tests: mismo tamaño que unit tests y menos que static e integration
+
+------------------------------------------------------------------------------------------------------------------------
+
 
 
