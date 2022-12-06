@@ -59,4 +59,27 @@ Cuando se entra a la fase de inflexión, hay más usuarios y se empiezan a escri
 
 ------------------------------------------------------------------------------------------------------------------------
 
+Clase 4 Herremientas de testing
+
+Estas herramientas mencionadas están clasificadas según el tipo o nivel de pruebas a realizar.
+
+Multipropósito o Robustas
+Pueden ejecutar la mayoría de pruebas de la pirámide o trofeo, tanto para backend, frontend, integration test, algunas hasta UI y API s testing.
+Jest, _Chai, Mocha, Ava, Jasmine _
+
+UI Testing
+Pruebas desplegadas en un dispositivo real o simulado bajo un Browser (navegador) automatizando toques y gestos en la aplicación.
+Playwright, _ Cypress, WebdriverIO, Puppeteer_
+
+API Testing
+En general, las APIs no tienen UI, usan protocolos de servicios por peticiones.
+Supertest, Dredd, Postman
+
+Pruebas Estáticas
+Estas pruebas no ejecutan el código, estas herramientas se integran al editor de código y van analizando si hay alguna mala práctica.
+ESLint, Prettier, Typescript tools (TSLint)
+
+------------------------------------------------------------------------------------------------------------------------
+
+
 
