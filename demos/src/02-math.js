@@ -10,7 +10,7 @@ function div(a, b) {
   }
   return a / b;
 }
-//RETO
+// RETO
 function rest(a, b) {
   return a - b;
 }
@@ -19,5 +19,5 @@ module.exports = {
   sum,
   mult,
   div,
-  rest
+  rest,
 };
