@@ -121,3 +121,14 @@ c Sistema Legacy Son sistemas que te piden agregar pruebas a algo funcional, inc
 c Clean Architecture Este patrón lleva buenas prácticas desde el principio, cada método está bien dividido y con responsabilidades acertadas, es mucho más facil de agregar el set de pruebas.
 
 ------------------------------------------------------------------------------------------------------------------------
+Clase 13 Pruebas unitarias
+
+Son las más comunes y se enfocan en probar unidades específicas, incluso conectando dependencias como BD o librerías emuladas (Dummies); se les conoce también como pruebas de estado o de caja negra, ya que solo importan las entradas y las salidas, en algunas ocasiones se hace con dependencias reales.
+
+Una unidad puede ser una función o un método o una clase, depende del paradigma usado en desarrollo (funcional o POO); una unidad debe tener solo una responsabilidad en específico.
+
+Una utilidad importante de las Unit Test es el Cover Report
+
+------------------------------------------------------------------------------------------------------------------------
+
+
