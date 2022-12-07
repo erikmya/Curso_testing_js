@@ -19,7 +19,7 @@ QA: Equipos de creacion de pruebas automaticas o manuales.
 
 ------------------------------------------------------------------------------------------------------------------------
 
-Clase 2 
+Clase 2
 
 La pirámide clásica del testing: (de menos a más costoso y tendría que haber más pruebas de las primeras que de las últimas)
 
@@ -81,5 +81,9 @@ ESLint, Prettier, Typescript tools (TSLint)
 
 ------------------------------------------------------------------------------------------------------------------------
 
+Clase 9 prueba
 
+Esto es una prueba de la clase 9
+
+------------------------------------------------------------------------------------------------------------------------
 
