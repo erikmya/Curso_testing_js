@@ -131,4 +131,13 @@ Una utilidad importante de las Unit Test es el Cover Report
 
 ------------------------------------------------------------------------------------------------------------------------
 
+Clase 14
+
+Es una medida porcentual que indica cuanto falta probar del código que va a ir a producción, cuál ya está probado, cuál no se usa. ISO y la FAA exigen 100% de cobertura, pero en la realidad no es tan así, por ejemplo hacer test a setter y getters puede llegar a ser innecesario, este 100% no garantiza que aparezcan errores ni que sean el mejor set de pruebas.
+
+Comando para correr el reporte Coverage
+
+npm run test -- --coverage
+
+El reporte genera un archivo index donde se muestran las métricas
 
