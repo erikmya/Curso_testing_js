@@ -1,0 +1,143 @@
+------------------------------------------------------------------------------------------------------------------------
+Clase 1 ¿Qué es el testing?
+
+En el mundo actual las tecnologias con las que vivimos necesitan codigo, esto ha hecho que el desarrollo de software se haya vuelto industrial, donde contamos con procesos y herramientas, como el testing, que nos permiten entregar mas rapido proyectos de calidad a nuestros clientes reduciendo el riesgo de errores en produccion.
+
+¿Por que hacer testing?
+Normalmente hay cuatro fases en el desarrollo de software para crear un producto:
+
+Diseño ⇒ Desarrollo ⇒ Pruebas ⇒ Produccion
+
+En estas fases, detectar un error se vuelve cada vez mas costoso. Ahi es donde hacemos tecnicas para prevenir estas situaciones. El testing es la manera en la que nosotros gestionamos el riesgo y tratamos de evitar, en la medida de lo posible, los errores en el sistema.
+
+Gestionar riesgos como Google
+Analisis de codigo estatico: Mientras desarrollamos vamos viendo nuestros resultados.
+Pruebas unitarias: Nos aseguramos que el codigo funciona como queremos.
+Pruebas de integracion: Verificar que varios elementos funcionan bien trabajando juntos.
+Revision de codigo: Equipo o persona encargada de revisar el codigo de las demas personas.
+QA: Equipos de creacion de pruebas automaticas o manuales.
+
+------------------------------------------------------------------------------------------------------------------------
+
+Clase 2
+
+La pirámide clásica del testing: (de menos a más costoso y tendría que haber más pruebas de las primeras que de las últimas)
+
+unit tests
+integration tests
+end to end tests (e2e)
+ui test: emulan el dispositivo físico
+En javascript se recomienda en vez la pirámide el trofeo de tests:
+
+static tests: el tronco (el segundo mayor número de pruebas)
+unit tests: mismo num. de pruebas que e2e y menos que static e integration
+integration tests: el mayor número de pruebas debe ser aquí
+e2e tests: mismo tamaño que unit tests y menos que static e integration
+
+------------------------------------------------------------------------------------------------------------------------
+
+Clase 3 Deuda técnica
+
+Igual que en las finanzas, las deudas no son buenas ni malas, solo son una estrategia para alcanzar algo y luego se paga.
+
+haciendo pruebas se maneja el
+riesgo
+
+Diseño
+Desarrollo
+Pruebas
+Producción
+El momento y pruebas dependen de la fase en la que se encuentra la compañía:
+
+Tracción
+Inflexión
+Escala
+Expansión
+La deuda de deficiencia del desarrollador puede ser alta porque en la fase de tracción, la compañía busca velocidad > precisión , de modo que en esta etapa el testing no se valora, ya que buscan lanzar, lanzar, lanzar…
+
+Cuando se entra a la fase de inflexión, hay más usuarios y se empiezan a escribir más pruebas, curando la deuda.
+
+------------------------------------------------------------------------------------------------------------------------
+
+Clase 4 Herremientas de testing
+
+Estas herramientas mencionadas están clasificadas según el tipo o nivel de pruebas a realizar.
+
+Multipropósito o Robustas
+Pueden ejecutar la mayoría de pruebas de la pirámide o trofeo, tanto para backend, frontend, integration test, algunas hasta UI y API s testing.
+Jest, _Chai, Mocha, Ava, Jasmine _
+
+UI Testing
+Pruebas desplegadas en un dispositivo real o simulado bajo un Browser (navegador) automatizando toques y gestos en la aplicación.
+Playwright, _ Cypress, WebdriverIO, Puppeteer_
+
+API Testing
+En general, las APIs no tienen UI, usan protocolos de servicios por peticiones.
+Supertest, Dredd, Postman
+
+Pruebas Estáticas
+Estas pruebas no ejecutan el código, estas herramientas se integran al editor de código y van analizando si hay alguna mala práctica.
+ESLint, Prettier, Typescript tools (TSLint)
+
+------------------------------------------------------------------------------------------------------------------------
+
+Clase 9 prueba
+
+Esto es una prueba de la clase 9
+
+------------------------------------------------------------------------------------------------------------------------
+
+Clase 11 Tipos de pruebas
+
+SUT (System Under Test): Sujeto Bajo Prueba, por ejemplo, Person sería nuestro SUT, no necesariamente tiene que ser un sistema.
+
+Validar: A la hora de validar resolvemos la siguiente pregunta: ¿estamos construyendo el sistema correcto?, por lo general, en la capa de requerimientos con el cliente y si le da valor a él.
+
+Verificar: Cuando ya se hacen pruebas, se verifica teniendo en mente la pregunta: ¿estamos construyendo el sistema correctamente? casi obviando que ya se produce valor al cliente.
+
+En todas las capas se pueden hacer pruebas, incluso sin código, como en los UML o en la revisión con el equipo de Scrum.
+
+------------------------------------------------------------------------------------------------------------------------
+Clase 12
+
+Metodologías
+
+TDD (Test Driven Development): Desarrollo guiado por pruebas, donde primero se hacen las pruebas antes de escribir el código (primero los expects).
+
+BDD (Behavior Driven Development): Desarrollo guiado por comportamiento de acuerdo a los requisitos y luego las pruebas.
+
+AAA “Mantra” para hacer pruebas
+
+_____ preparar Arrange | Given dado algo
+_________ ejecutar Act | When cuando
+resolver hipótesis Assert | Then entonces
+
+concepto Falso Positívo Cuando una prueba indica un error, pero todo está bien, por ejemplo, testeando el método suma de 1 +1 y pongo el expect en 5, es un falso positivo, luego la prueba está mal.
+
+c Falso Negativo Son más comunes, ya que parece que todo está normal, pero no se ha identificado el error, el set de pruebas debería ser más amplio; esto sucede cuando caemos en tan solo, probar el Happy Path, probar las condiciones en las que sabemos que el sistema funciona, por ejemplo, en el SUT de dividir las primeras pruebas salían bien porque no se tomó en cuenta la división entre cero 0, luego se hizo la prueba y el refactor. En caso de falso negativo lo mejor es aplicar TDD.
+
+c Sistema Legacy Son sistemas que te piden agregar pruebas a algo funcional, incluso en paralelo; hay que refactorizar los métodos enormes a pequeños para hacer unit test de pocos a muchos métodos; legacy no lleva una buena arquitectura.
+
+c Clean Architecture Este patrón lleva buenas prácticas desde el principio, cada método está bien dividido y con responsabilidades acertadas, es mucho más facil de agregar el set de pruebas.
+
+------------------------------------------------------------------------------------------------------------------------
+Clase 13 Pruebas unitarias
+
+Son las más comunes y se enfocan en probar unidades específicas, incluso conectando dependencias como BD o librerías emuladas (Dummies); se les conoce también como pruebas de estado o de caja negra, ya que solo importan las entradas y las salidas, en algunas ocasiones se hace con dependencias reales.
+
+Una unidad puede ser una función o un método o una clase, depende del paradigma usado en desarrollo (funcional o POO); una unidad debe tener solo una responsabilidad en específico.
+
+Una utilidad importante de las Unit Test es el Cover Report
+
+------------------------------------------------------------------------------------------------------------------------
+
+Clase 14
+
+Es una medida porcentual que indica cuanto falta probar del código que va a ir a producción, cuál ya está probado, cuál no se usa. ISO y la FAA exigen 100% de cobertura, pero en la realidad no es tan así, por ejemplo hacer test a setter y getters puede llegar a ser innecesario, este 100% no garantiza que aparezcan errores ni que sean el mejor set de pruebas.
+
+Comando para correr el reporte Coverage
+
+npm run test -- --coverage
+
+El reporte genera un archivo index donde se muestran las métricas
+
